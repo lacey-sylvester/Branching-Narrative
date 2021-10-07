@@ -9,7 +9,7 @@ public class GameHandler : MonoBehaviour
 
     public static int playerStat;
     //public GameObject textGameObject;
-
+    //sanity stat
     //void Start () { UpdateScore (); }
 
     void Update()
@@ -36,17 +36,21 @@ public class GameHandler : MonoBehaviour
         SceneManager.LoadScene("Scene1");
     }
 
+    public void Credits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
+
     public void RestartGame()
     {
         SceneManager.LoadScene("MainMenu");
     }
 
-    public void QuitGame()
-    {
-#if UNITY_EDITOR
-                UnityEditor.EditorApplication.isPlaying = false;
-#else
+    public void QuitGame() {
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+        #else
         Application.Quit();
-#endif
+        #endif
     }
 }
