@@ -592,7 +592,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5337137334172147540}
+      - m_Target: {fileID: 253367029522990335, guid: f07fe5fdcba5795459ab8ba0a8062b87, type: 3}
         m_TargetAssemblyTypeName: GameHandler, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
@@ -1033,6 +1033,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2107433143}
   m_CullTransparentMesh: 1
+--- !u!1 &2135183320 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3415357280329012036, guid: f07fe5fdcba5795459ab8ba0a8062b87, type: 3}
+  m_PrefabInstance: {fileID: 5337137334172147539}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2135183321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135183320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c75b695c87c361646b5eb47f0e1e5216, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5337137334172147539
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1088,16 +1105,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameHandler
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 253367029522990335, guid: f07fe5fdcba5795459ab8ba0a8062b87, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f07fe5fdcba5795459ab8ba0a8062b87, type: 3}
---- !u!114 &5337137334172147540 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 253367029522990335, guid: f07fe5fdcba5795459ab8ba0a8062b87, type: 3}
-  m_PrefabInstance: {fileID: 5337137334172147539}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c75b695c87c361646b5eb47f0e1e5216, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
