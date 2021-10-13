@@ -51,7 +51,7 @@ public void talking(){         // main story function. Players hit next to progr
               // AudioSource.Play();
       }
       else if (primeInt == 2){
-             ArtChar1.SetActive(true);
+             //ArtChar1.SetActive(true);
               dialogue.SetActive(true);
               Char1name.text = "Jeda";
               Char1speech.text = "Wakey wakey, human.";
