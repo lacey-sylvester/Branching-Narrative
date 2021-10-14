@@ -250,7 +250,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 58720192}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54dc9c784a04c48f48938f9950a99685, type: 3}
+  m_Script: {fileID: 11500000, guid: 71aec55040a00324081cdf70eb714e07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   primeInt: 1
@@ -262,7 +262,6 @@ MonoBehaviour:
   ArtBG1: {fileID: 855856472}
   NextScene1Button: {fileID: 1647288862}
   NextScene2Button: {fileID: 1405341906}
-  NextScene3Button: {fileID: 0}
   nextButton: {fileID: 1724494876}
 --- !u!1 &110796318
 GameObject:

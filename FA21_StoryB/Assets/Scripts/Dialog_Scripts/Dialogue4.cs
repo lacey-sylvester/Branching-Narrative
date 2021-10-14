@@ -17,12 +17,12 @@ public class Dialogue4 : MonoBehaviour
     public GameObject dialogue;
     public GameObject ArtChar1;
     public GameObject ArtBG1;
-    public GameObject Button_Choice4a;
-    public GameObject Button_Choice4b;
+    //public GameObject Button_Choice4a;
+    //public GameObject Button_Choice4b;
     public GameObject NextScene1Button;
     public GameObject NextScene2Button;
     public GameObject Button_Next;
-    //public GameHandler GameHandler;
+    public GameHandler GameHandler;
     //public AudioSource audioSource;
     private bool allowSpace = true;
 
@@ -31,8 +31,8 @@ public class Dialogue4 : MonoBehaviour
         dialogue.SetActive(false);
         ArtChar1.SetActive(false);
         ArtBG1.SetActive(true);
-        Button_Choice4a.SetActive(false);
-        Button_Choice4b.SetActive(false);
+     //   Button_Choice4a.SetActive(false);
+     //   Button_Choice4b.SetActive(false);
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
         Button_Next.SetActive(true);
@@ -111,8 +111,8 @@ public class Dialogue4 : MonoBehaviour
             // Turn off "Next" button, turn on "Choice" buttons
             Button_Next.SetActive(false);
             allowSpace = false;
-            Button_Choice4a.SetActive(true); // function Button_Choice4aFunct()
-            Button_Choice4b.SetActive(true); // function Button_Choice4bFunct()
+        //    Button_Choice4a.SetActive(true); // function Button_Choice4aFunct()
+        //    Button_Choice4b.SetActive(true); // function Button_Choice4bFunct()
         }
         // ENCOUNTER AFTER CHOICE #1
         else if (primeInt == 100)
@@ -160,8 +160,8 @@ public class Dialogue4 : MonoBehaviour
         Char2name.text = "You";
         Text_Char2speech.text = "I don't know what you're talking about!";
         primeInt = 99;
-        Button_Choice4a.SetActive(false);
-        Button_Choice4b.SetActive(false);
+    //    Button_Choice4a.SetActive(false);
+    //    Button_Choice4b.SetActive(false);
         Button_Next.SetActive(true);
         allowSpace = true;
     }
@@ -172,18 +172,18 @@ public class Dialogue4 : MonoBehaviour
         Char2name.text = "You";
         Text_Char2speech.text = "Sure, anything you want... just lay off the club.";
         primeInt = 199;
-        Button_Choice4a.SetActive(false);
-        Button_Choice4b.SetActive(false);
+     //   Button_Choice4a.SetActive(false);
+     //   Button_Choice4b.SetActive(false);
         Button_Next.SetActive(true);
         allowSpace = true;
     }
 
     public void SceneChange1()
     {
-        SceneManager.LoadScene("Scene2a");
+        SceneManager.LoadScene("Scene_4a");
     }
     public void SceneChange2()
     {
-        SceneManager.LoadScene("Scene2b");
+        SceneManager.LoadScene("Scene_5");
     }
 }

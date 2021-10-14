@@ -251,7 +251,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 58720192}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54dc9c784a04c48f48938f9950a99685, type: 3}
+  m_Script: {fileID: 11500000, guid: c51aa48fd968e4a4e9017fd19671a34c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   primeInt: 1
@@ -259,12 +259,13 @@ MonoBehaviour:
   Char1speech: {fileID: 110796320}
   Char2name: {fileID: 1366807607}
   Char2speech: {fileID: 439730554}
-  dialogue: {fileID: 285413955}
-  ArtBG1: {fileID: 855856472}
+  dialogue: {fileID: 0}
+  ArtBG1: {fileID: 0}
   NextScene1Button: {fileID: 1647288862}
   NextScene2Button: {fileID: 1405341906}
   NextScene3Button: {fileID: 314362497}
   nextButton: {fileID: 1724494876}
+  gameHandler: {fileID: 835868601}
 --- !u!1 &110796318
 GameObject:
   m_ObjectHideFlags: 0
@@ -997,6 +998,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f07fe5fdcba5795459ab8ba0a8062b87, type: 3}
+--- !u!114 &835868601 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 253367029522990335, guid: f07fe5fdcba5795459ab8ba0a8062b87, type: 3}
+  m_PrefabInstance: {fileID: 835868600}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a150c7db7cedee04d9a6f6ad7a688220, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &855856472
 GameObject:
   m_ObjectHideFlags: 0
