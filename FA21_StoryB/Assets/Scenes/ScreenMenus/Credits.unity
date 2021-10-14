@@ -799,13 +799,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Lacey
+  m_Text: 'Lacey Sylvester
 
-    Abe
+    Abe Anavisca
 
-    Sarah
+    Sarah Garezon
 
-    Faith'
+    Faith Drake'
 --- !u!222 &2065960881
 CanvasRenderer:
   m_ObjectHideFlags: 0
