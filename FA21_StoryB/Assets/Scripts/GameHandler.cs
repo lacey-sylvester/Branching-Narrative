@@ -7,7 +7,9 @@ using UnityEngine.SceneManagement;
 public class GameHandler : MonoBehaviour
 {
 
-    public static int playerStat;
+    public static int playerSanity = 10;
+	
+	
     //public GameObject textGameObject;
     //sanity stat
     //void Start () { UpdateScore (); }
@@ -20,12 +22,16 @@ public class GameHandler : MonoBehaviour
         }
     }
 
-    public void AddPlayerStat(int amount)
-    {
-        playerStat += amount;
-        Debug.Log("Current Player Stat = " + playerStat);
+    public void AddPlayerStanity(int amount){
+        playerSanity += amount;
+        Debug.Log("Current Player Sanity = " + playerSanity);
         //      UpdateScore ();
     }
+
+    public int WhatIsPlayerSanity(){
+        return playerSanity;
+    }
+
 
     //void UpdateScore () {
     //        Text scoreTemp = textGameObject.GetComponent<Text>();

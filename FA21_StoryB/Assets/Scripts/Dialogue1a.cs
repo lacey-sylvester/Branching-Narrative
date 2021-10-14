@@ -23,7 +23,7 @@ public class Dialogue1a : MonoBehaviour
       public GameObject NextScene2Button;
 	  public GameObject NextScene3Button;
       public GameObject nextButton;
-     //public GameHandler gameHandler;
+      public GameHandler gameHandler;
      //public AudioSource audioSource;
       private bool allowSpace = true;
 
@@ -85,12 +85,18 @@ public void talking(){         // main story function. Players hit next to progr
               Char1speech.text = "I am searching for a fugitive. Ragu Fahn.";
               Char2name.text = "";
               Char2speech.text = "";
+			  gameHandler.AddPlayerStanity(-5);
       }
      else if (primeInt ==7){
               Char1name.text = "";
               Char1speech.text = "";
               Char2name.text = "You";
               Char2speech.text = "Why do you think I know anything?";
+			  
+			  if (gameHandler.WhatIsPlayerSanity() < 10){
+				  primeInt = 39;
+			  }
+			  
       }
      else if (primeInt == 8){
               Char1name.text = "Jeda";
@@ -106,6 +112,18 @@ public void talking(){         // main story function. Players hit next to progr
               //Choice1a.SetActive(true); // function Choice1aFunct()
               //Choice1b.SetActive(true); // function Choice1bFunct()
       }
+	  
+	  
+	  else if (primeInt ==40){
+              Char1name.text = "";
+              Char1speech.text = "";
+              Char2name.text = "You";
+              Char2speech.text = "The world is suddenly less stable!";
+      }
+	  
+	  
+	  
+	  
 // ENCOUNTER AFTER CHOICE #1
      else if (primeInt == 100){
               Char1name.text = "Jeda";
