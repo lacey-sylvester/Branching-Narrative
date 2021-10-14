@@ -20,7 +20,8 @@ public class Dialogue1a : MonoBehaviour
       //public GameObject Choice1a;
       //public GameObject Choice1b;
       public GameObject NextScene1Button;
-      //public GameObject NextScene2Button;
+      public GameObject NextScene2Button;
+	  public GameObject NextScene3Button;
       public GameObject nextButton;
      //public GameHandler gameHandler;
      //public AudioSource audioSource;
@@ -33,7 +34,8 @@ void Start(){         // initial visibility settings
       //Choice1a.SetActive(false);
       //Choice1b.SetActive(false);
       NextScene1Button.SetActive(false);
-      //NextScene2Button.SetActive(false);
+      NextScene2Button.SetActive(false);
+	  NextScene3Button.SetActive(false);
       nextButton.SetActive(true);
  }
 
@@ -99,6 +101,8 @@ public void talking(){         // main story function. Players hit next to progr
               nextButton.SetActive(false);
               allowSpace = false;
               NextScene1Button.SetActive(true);
+			  NextScene2Button.SetActive(true);
+			  NextScene3Button.SetActive(true);
               //Choice1a.SetActive(true); // function Choice1aFunct()
               //Choice1b.SetActive(true); // function Choice1bFunct()
       }
@@ -161,9 +165,13 @@ public void talking(){         // main story function. Players hit next to progr
       // }
 
       public void SceneChange1(){
-             SceneManager.LoadScene("Scene2a");
+             SceneManager.LoadScene("Scene_2");
       }
-      //public void SceneChange2(){
-            //  SceneManager.LoadScene("Scene2b");
-    //  }
+      public void SceneChange2(){
+             SceneManager.LoadScene("Scene_2a");
+      }
+	  
+	  public void SceneChange3(){
+             SceneManager.LoadScene("Scene_2b");
+      }
 }

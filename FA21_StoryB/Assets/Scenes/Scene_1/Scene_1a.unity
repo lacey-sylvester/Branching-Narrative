@@ -259,9 +259,11 @@ MonoBehaviour:
   Char1speech: {fileID: 110796320}
   Char2name: {fileID: 1366807607}
   Char2speech: {fileID: 439730554}
-  dialogue: {fileID: 0}
+  dialogue: {fileID: 285413955}
   ArtBG1: {fileID: 855856472}
   NextScene1Button: {fileID: 1647288862}
+  NextScene2Button: {fileID: 1405341906}
+  NextScene3Button: {fileID: 314362497}
   nextButton: {fileID: 1724494876}
 --- !u!1 &110796318
 GameObject:
@@ -504,7 +506,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 314362500}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 58720198}
+        m_TargetAssemblyTypeName: Dialogue1a, Assembly-CSharp
+        m_MethodName: SceneChange3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &314362500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1377,7 +1391,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1405341909}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 58720198}
+        m_TargetAssemblyTypeName: Dialogue1a, Assembly-CSharp
+        m_MethodName: SceneChange2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1405341909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1512,7 +1538,7 @@ GameObject:
   - component: {fileID: 1647288865}
   - component: {fileID: 1647288864}
   m_Layer: 5
-  m_Name: ButtonSceneChange
+  m_Name: ButtonSceneChange1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1581,7 +1607,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1647288865}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 58720198}
+        m_TargetAssemblyTypeName: Dialogue1a, Assembly-CSharp
+        m_MethodName: SceneChange1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1647288865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1702,7 +1740,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1724494879}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 58720198}
+        m_TargetAssemblyTypeName: Dialogue1a, Assembly-CSharp
+        m_MethodName: talking
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1724494879
 MonoBehaviour:
   m_ObjectHideFlags: 0
