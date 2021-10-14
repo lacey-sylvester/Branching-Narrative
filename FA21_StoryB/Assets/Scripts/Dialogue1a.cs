@@ -5,11 +5,9 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
-
-public class Dialogue1b : MonoBehaviour
+public class Dialogue1a : MonoBehaviour
 {
-  public class DialogueScene1 : MonoBehaviour {
-      public int primeInt = 1; // This integer drives game progress!
+  public int primeInt = 1; // This integer drives game progress!
       public Text Char1name;
       public Text Char1speech;
       public Text Char2name;
@@ -100,7 +98,7 @@ public void talking(){         // main story function. Players hit next to progr
               // Turn off "Next" button, turn on "Choice" buttons
               nextButton.SetActive(false);
               allowSpace = false;
-                NextScene1Button.SetActive(true);
+              NextScene1Button.SetActive(true);
               //Choice1a.SetActive(true); // function Choice1aFunct()
               //Choice1b.SetActive(true); // function Choice1bFunct()
       }
@@ -134,7 +132,7 @@ public void talking(){         // main story function. Players hit next to progr
               Char2speech.text = "Ragu hangs out in a rough part of town. I'll take you now.";
               nextButton.SetActive(false);
               allowSpace = false;
-            //  NextScene2Button.SetActive(true);
+              //NextScene2Button.SetActive(true);
       }
    }
 
@@ -166,7 +164,6 @@ public void talking(){         // main story function. Players hit next to progr
              SceneManager.LoadScene("Scene2a");
       }
       //public void SceneChange2(){
-              //SceneManager.LoadScene("Scene2b");
-    // }
-}
+            //  SceneManager.LoadScene("Scene2b");
+    //  }
 }

@@ -451,7 +451,7 @@ GameObject:
   - component: {fileID: 1023119920}
   - component: {fileID: 1023119919}
   m_Layer: 5
-  m_Name: Name_Player
+  m_Name: Char2name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -520,6 +520,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1023119917}
   m_CullTransparentMesh: 1
+--- !u!1001 &1023590051
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1648861728352116197, guid: f07fe5fdcba5795459ab8ba0a8062b87, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1648861728352116197, guid: f07fe5fdcba5795459ab8ba0a8062b87, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 637.9982
+      objectReference: {fileID: 0}
+    - target: {fileID: 1648861728352116197, guid: f07fe5fdcba5795459ab8ba0a8062b87, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 250.38034
+      objectReference: {fileID: 0}
+    - target: {fileID: 1648861728352116197, guid: f07fe5fdcba5795459ab8ba0a8062b87, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -36.992165
+      objectReference: {fileID: 0}
+    - target: {fileID: 1648861728352116197, guid: f07fe5fdcba5795459ab8ba0a8062b87, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1648861728352116197, guid: f07fe5fdcba5795459ab8ba0a8062b87, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1648861728352116197, guid: f07fe5fdcba5795459ab8ba0a8062b87, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1648861728352116197, guid: f07fe5fdcba5795459ab8ba0a8062b87, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1648861728352116197, guid: f07fe5fdcba5795459ab8ba0a8062b87, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1648861728352116197, guid: f07fe5fdcba5795459ab8ba0a8062b87, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1648861728352116197, guid: f07fe5fdcba5795459ab8ba0a8062b87, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3415357280329012036, guid: f07fe5fdcba5795459ab8ba0a8062b87, type: 3}
+      propertyPath: m_Name
+      value: GameHandler
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f07fe5fdcba5795459ab8ba0a8062b87, type: 3}
 --- !u!1 &1268966783
 GameObject:
   m_ObjectHideFlags: 0
@@ -823,7 +880,7 @@ GameObject:
   - component: {fileID: 1503316316}
   - component: {fileID: 1503316315}
   m_Layer: 5
-  m_Name: Speech_Narrator
+  m_Name: Char1speech
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1029,7 +1086,7 @@ GameObject:
   - component: {fileID: 1583769005}
   - component: {fileID: 1583769004}
   m_Layer: 5
-  m_Name: Speech_Player
+  m_Name: Char2speech
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1110,7 +1167,7 @@ GameObject:
   - component: {fileID: 1649844653}
   - component: {fileID: 1649844652}
   m_Layer: 5
-  m_Name: Name_Narrator
+  m_Name: Char1name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
