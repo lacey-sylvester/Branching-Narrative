@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
-public class DialogScene4 : MonoBehaviour
+public class Dialogue4 : MonoBehaviour
 {
     public int primeInt = 1; // This integer drives game progress!
     public Text Char1name;
@@ -16,11 +16,11 @@ public class DialogScene4 : MonoBehaviour
     //public Text Char3speech;
     public GameObject dialogue;
     public GameObject ArtChar1;
-    public GameObject ImageBG;
+    public GameObject ArtBG1;
     public GameObject Button_Choice4a;
     public GameObject Button_Choice4b;
-    public GameObject Button_SceneChange1;
-    public GameObject Button_SceneChange2;
+    public GameObject NextScene1Button;
+    public GameObject NextScene2Button;
     public GameObject Button_Next;
     //public GameHandler GameHandler;
     //public AudioSource audioSource;
