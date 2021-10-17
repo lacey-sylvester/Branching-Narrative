@@ -26,6 +26,7 @@ public class DialogueIntro : MonoBehaviour
      //public AudioSource audioSource;
       private bool allowSpace = true;
 
+
 void Start(){         // initial visibility settings
       dialogue.SetActive(false);
       //ArtChar1.SetActive(false);
@@ -53,88 +54,90 @@ public void talking(){         // main story function. Players hit next to progr
       else if (primeInt == 2){
              //ArtChar1.SetActive(true);
               dialogue.SetActive(true);
-              Char1name.text = "Jeda";
-              Char1speech.text = "Wakey wakey, human.";
+              Char1name.text = "Narrator";
+              Char1speech.text = "In the heartlands of America within those vast fields of grain, between the hum of machines and the cacophony of the mundane, the veil between our world and something else becomes thin.";
               Char2name.text = "";
               Char2speech.text = "";
       }
-     else if (primeInt ==3){
-              Char1name.text = "";
-              Char1speech.text = "";
-              Char2name.text = "You";
-              Char2speech.text = "Wuh..? What happened?";
-              //gameHandler.AddPlayerStat(1);
-      }
+     // else if (primeInt ==3){
+     //          Char1name.text = "";
+     //          Char1speech.text = "";
+     //          Char2name.text = "You";
+     //          Char2speech.text = "Wuh..? What happened?";
+     //          //gameHandler.AddPlayerStat(1);
+     //  }
      else if (primeInt == 4){
-              Char1name.text = "Jeda";
-              Char1speech.text = "I know I did not hit you that hard.";
+              Char1name.text = "Narrator";
+              Char1speech.text = "Your grandmother Gertrude (nameplace holder),may she rest in peace, has left you her homestead here in the unknown town of Innsmouth.";
               Char2name.text = "";
               Char2speech.text = "";
       }
-     else if (primeInt == 5){
-              Char1name.text = "";
-              Char1speech.text = "";
-              Char2name.text = "You";
-              Char2speech.text = "Hit me? Why?";
-              //gameHandler.AddPlayerStat(1);
-      }
+     // else if (primeInt == 5){
+     //          Char1name.text = "";
+     //          Char1speech.text = "";
+     //          Char2name.text = "You";
+     //          Char2speech.text = "Hit me? Why?";
+     //          //gameHandler.AddPlayerStat(1);
+     //  }
      else if (primeInt == 6){
-              Char1name.text = "Jeda";
-              Char1speech.text = "I am searching for a fugitive. Ragu Fahn.";
+              Char1name.text = "Narrator";
+              Char1speech.text = "you travelled hundreds of miles from home to claim your inheritance. However, not all is as it seems in the neighborhood.";
               Char2name.text = "";
               Char2speech.text = "";
-      }
-     else if (primeInt ==7){
-              Char1name.text = "";
-              Char1speech.text = "";
-              Char2name.text = "You";
-              Char2speech.text = "Why do you think I know anything?";
-      }
-     else if (primeInt == 8){
-              Char1name.text = "Jeda";
-              Char1speech.text = "Do not play the stupid. You will take me to him.";
-              Char2name.text = "";
-              Char2speech.text = "";
-              // Turn off "Next" button, turn on "Choice" buttons
-              nextButton.SetActive(false);
-              allowSpace = false;
-              NextScene1Button.SetActive(true);
-              //Choice1a.SetActive(true); // function Choice1aFunct()
-              //Choice1b.SetActive(true); // function Choice1bFunct()
-      }
-// ENCOUNTER AFTER CHOICE #1
-     else if (primeInt == 100){
-              Char1name.text = "Jeda";
-              Char1speech.text = "Then you are no use to me, and must be silenced.";
-              Char2name.text = "";
-              Char2speech.text = "";
-      }
-     else if (primeInt == 101){
-              Char1name.text = "Jeda";
-              Char1speech.text = "Come back here! Do not think you can hide from me!";
-              Char2name.text = "";
-              Char2speech.text = "";
-              nextButton.SetActive(false);
-              allowSpace = false;
               NextScene1Button.SetActive(true);
       }
-
-     else if (primeInt == 200){
-              Char1name.text = "Jeda";
-              Char1speech.text = "Do not think you can fool me, human. Where will we find him?";
-              Char2name.text = "";
-              Char2speech.text = "";
-      }
-     else if (primeInt == 201){
-              Char1name.text = "";
-              Char1speech.text = "";
-              Char2name.text = "You";
-              Char2speech.text = "Ragu hangs out in a rough part of town. I'll take you now.";
-              nextButton.SetActive(false);
-              allowSpace = false;
+    }
+//      else if (primeInt ==7){
+//               Char1name.text = "";
+//               Char1speech.text = "";
+//               Char2name.text = "You";
+//               Char2speech.text = "Why do you think I know anything?";
+//       }
+//      else if (primeInt == 8){
+//               Char1name.text = "Jeda";
+//               Char1speech.text = "Do not play the stupid. You will take me to him.";
+//               Char2name.text = "";
+//               Char2speech.text = "";
+//               // Turn off "Next" button, turn on "Choice" buttons
+//               nextButton.SetActive(false);
+//               allowSpace = false;
+//               NextScene1Button.SetActive(true);
+//               //Choice1a.SetActive(true); // function Choice1aFunct()
+//               //Choice1b.SetActive(true); // function Choice1bFunct()
+//       }
+// // ENCOUNTER AFTER CHOICE #1
+//      else if (primeInt == 100){
+//               Char1name.text = "Jeda";
+//               Char1speech.text = "Then you are no use to me, and must be silenced.";
+//               Char2name.text = "";
+//               Char2speech.text = "";
+//       }
+//      else if (primeInt == 101){
+//               Char1name.text = "Jeda";
+//               Char1speech.text = "Come back here! Do not think you can hide from me!";
+//               Char2name.text = "";
+//               Char2speech.text = "";
+//               nextButton.SetActive(false);
+//               allowSpace = false;
+//               NextScene1Button.SetActive(true);
+//       }
+//
+//      else if (primeInt == 200){
+//               Char1name.text = "Jeda";
+//               Char1speech.text = "Do not think you can fool me, human. Where will we find him?";
+//               Char2name.text = "";
+//               Char2speech.text = "";
+//       }
+     // else if (primeInt == 201){
+     //          Char1name.text = "";
+     //          Char1speech.text = "";
+     //          Char2name.text = "You";
+     //          Char2speech.text = "Ragu hangs out in a rough part of town. I'll take you now.";
+     //          nextButton.SetActive(false);
+     //          allowSpace = false;
               //NextScene2Button.SetActive(true);
-      }
-   }
+      // }
+   // }
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
       // public void Choice1aFunct(){
@@ -160,10 +163,11 @@ public void talking(){         // main story function. Players hit next to progr
       //         allowSpace = true;
       // }
 
+
       public void SceneChange1(){
              SceneManager.LoadScene("Scene_1a");
       }
       //public void SceneChange2(){
             //  SceneManager.LoadScene("Scene2b");
     //  }
-}
+ }
