@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 58720195}
   - component: {fileID: 58720194}
   - component: {fileID: 58720193}
-  - component: {fileID: 58720197}
   - component: {fileID: 58720198}
   m_Layer: 5
   m_Name: Canvas
@@ -229,18 +228,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &58720197
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 58720192}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a150c7db7cedee04d9a6f6ad7a688220, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &58720198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,15 +245,13 @@ MonoBehaviour:
   Text_Char1speech: {fileID: 0}
   Char2name: {fileID: 0}
   Text_Char2speech: {fileID: 0}
-  dialogue: {fileID: 0}
+  dialogue: {fileID: 285413955}
   ArtChar1: {fileID: 0}
-  ArtBG1: {fileID: 0}
-  Button_Choice4a: {fileID: 0}
-  Button_Choice4b: {fileID: 0}
+  ArtBG1: {fileID: 855856472}
   NextScene1Button: {fileID: 0}
   NextScene2Button: {fileID: 0}
-  Button_Next: {fileID: 0}
-  GameHandler: {fileID: 0}
+  Button_Next: {fileID: 1724494876}
+  GameHandler: {fileID: 835868601}
 --- !u!1 &110796318
 GameObject:
   m_ObjectHideFlags: 0
@@ -866,6 +851,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f07fe5fdcba5795459ab8ba0a8062b87, type: 3}
+--- !u!114 &835868601 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 253367029522990335, guid: f07fe5fdcba5795459ab8ba0a8062b87, type: 3}
+  m_PrefabInstance: {fileID: 835868600}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a150c7db7cedee04d9a6f6ad7a688220, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &855856472
 GameObject:
   m_ObjectHideFlags: 0
