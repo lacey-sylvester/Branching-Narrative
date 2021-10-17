@@ -71,7 +71,7 @@ public class Dialogue4 : MonoBehaviour
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "test";
+            Char2name.text = "";
             Char2speech.text = ">Tired after a long day, you decide to take a seat on Granny’s rocking chair.";
             //gameHandler.AddPlayerStat(1);
         }
@@ -86,7 +86,7 @@ public class Dialogue4 : MonoBehaviour
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "test";
+            Char2name.text = "";
             Char2speech.text = ">A piece of paper is crumpled under the leg of the chair.";
             //gameHandler.AddPlayerStat(1);
         }
@@ -96,15 +96,15 @@ public class Dialogue4 : MonoBehaviour
             ArtBG1.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "test";
-            Char2speech.text = "It’s an unfinished crossword puzzle.";
+            Char2name.text = "";
+            Char2speech.text = ">It’s an unfinished crossword puzzle.";
         }
         else if (primeInt == 7)
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "test";
-            Char2speech.text = "The only words filled are: SCARABS, CRAWLSPACE, and FOG.";
+            Char2name.text = "";
+            Char2speech.text = ">The only words filled are: SCARABS, CRAWLSPACE, and FOG.";
         }
         else if (primeInt == 8)
         {
@@ -126,8 +126,8 @@ public class Dialogue4 : MonoBehaviour
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "test";
-            Char2speech.text = "A shrill whining can be heard under the porch. It sounds like a cicada.";
+            Char2name.text = "";
+            Char2speech.text = ">A shrill whining can be heard under the porch. It sounds like a cicada.";
             Char3name.text = "";
             Char3speech.text = "";
         }
