@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
-public class DialogueIntro : MonoBehaviour
+public class Dialogue6 : MonoBehaviour
 {
   public int primeInt = 1; // This integer drives game progress!
       public Text Char1name;
@@ -20,12 +20,11 @@ public class DialogueIntro : MonoBehaviour
       //public GameObject Choice1a;
       //public GameObject Choice1b;
       public GameObject NextScene1Button;
-      //public GameObject NextScene2Button;
+      public GameObject NextScene2Button;
       public GameObject nextButton;
-     //public GameHandler gameHandler;
+      public GameHandler gameHandler;
      //public AudioSource audioSource;
       private bool allowSpace = true;
-
 
 void Start(){         // initial visibility settings
       dialogue.SetActive(false);
@@ -54,45 +53,38 @@ public void talking(){         // main story function. Players hit next to progr
       else if (primeInt == 2){
              //ArtChar1.SetActive(true);
               dialogue.SetActive(true);
-              Char1name.text = "";
-              Char1speech.text = "";
+              Char1name.text = "Granny";
+              Char1speech.text = "Goodbye. You saved me!! such a good grandkid.";
               Char2name.text = "";
               Char2speech.text = "";
-              Char3name.text = "";
-              Char3speech.text = "";
-      }
-     // else if (primeInt ==3){
-     //          Char1name.text = "";
-     //          Char1speech.text = "";
-     //          Char2name.text = "You";
-     //          Char2speech.text = "Wuh..? What happened?";
-     //          //gameHandler.AddPlayerStat(1);
-     //  }
-     else if (primeInt == 4){
-              Char1name.text = "";
-              Char1speech.text = "";
-              Char2name.text = "";
-              Char2speech.text = "";
-              Char3name.text = "";
-              Char3speech.text = "";
-      }
-     // else if (primeInt == 5){
-     //          Char1name.text = "";
-     //          Char1speech.text = "";
-     //          Char2name.text = "You";
-     //          Char2speech.text = "Hit me? Why?";
-     //          //gameHandler.AddPlayerStat(1);
-     //  }
-     else if (primeInt == 6){
-              Char1name.text = "";
-              Char1speech.text = "";
-              Char2name.text = "";
-              Char2speech.text = "";
-              Char3name.text = "";
-              Char3speech.text = "";
               NextScene1Button.SetActive(true);
       }
-    }
+//      else if (primeInt ==3){
+//               Char1name.text = "";
+//               Char1speech.text = "";
+//               Char2name.text = "You";
+//               Char2speech.text = "Wuh..? What happened?";
+//               //gameHandler.AddPlayerStat(1);
+//       }
+//      else if (primeInt == 4){
+//               Char1name.text = "Jeda";
+//               Char1speech.text = "I know I did not hit you that hard.";
+//               Char2name.text = "";
+//               Char2speech.text = "";
+//       }
+//      else if (primeInt == 5){
+//               Char1name.text = "";
+//               Char1speech.text = "";
+//               Char2name.text = "You";
+//               Char2speech.text = "Hit me? Why?";
+//               //gameHandler.AddPlayerStat(1);
+//       }
+//      else if (primeInt == 6){
+//               Char1name.text = "Jeda";
+//               Char1speech.text = "I am searching for a fugitive. Ragu Fahn.";
+//               Char2name.text = "";
+//               Char2speech.text = "";
+//       }
 //      else if (primeInt ==7){
 //               Char1name.text = "";
 //               Char1speech.text = "";
@@ -134,16 +126,16 @@ public void talking(){         // main story function. Players hit next to progr
 //               Char2name.text = "";
 //               Char2speech.text = "";
 //       }
-     // else if (primeInt == 201){
-     //          Char1name.text = "";
-     //          Char1speech.text = "";
-     //          Char2name.text = "You";
-     //          Char2speech.text = "Ragu hangs out in a rough part of town. I'll take you now.";
-     //          nextButton.SetActive(false);
-     //          allowSpace = false;
-              //NextScene2Button.SetActive(true);
-      // }
-   // }
+//      else if (primeInt == 201){
+//               Char1name.text = "";
+//               Char1speech.text = "";
+//               Char2name.text = "You";
+//               Char2speech.text = "Ragu hangs out in a rough part of town. I'll take you now.";
+//               nextButton.SetActive(false);
+//               allowSpace = false;
+//               //NextScene2Button.SetActive(true);
+//       }
+//    }
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
       // public void Choice1aFunct(){
@@ -169,11 +161,10 @@ public void talking(){         // main story function. Players hit next to progr
       //         allowSpace = true;
       // }
 
-
       public void SceneChange1(){
-             SceneManager.LoadScene("Scene_1a");
+             SceneManager.LoadScene("WinScreen");
       }
-      //public void SceneChange2(){
-            //  SceneManager.LoadScene("Scene2b");
-    //  }
- }
+      // public void SceneChange2(){
+             SceneManager.LoadScene("Scene_2b");
+      }
+}
