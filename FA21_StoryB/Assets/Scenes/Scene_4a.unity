@@ -389,20 +389,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 58720192}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc99da698ec10a545ae818ecdbaac28a, type: 3}
+  m_Script: {fileID: 11500000, guid: cca5135e6baaef6478a8eb15853f5fe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  primeInt: 1
-  Char1name: {fileID: 0}
-  Char1speech: {fileID: 0}
-  Char2name: {fileID: 0}
-  Char2speech: {fileID: 0}
-  dialogue: {fileID: 0}
-  ArtBG1: {fileID: 0}
-  NextScene1Button: {fileID: 0}
-  NextScene2Button: {fileID: 0}
-  nextButton: {fileID: 0}
-  gameHandler: {fileID: 0}
 --- !u!1 &110796318
 GameObject:
   m_ObjectHideFlags: 0
