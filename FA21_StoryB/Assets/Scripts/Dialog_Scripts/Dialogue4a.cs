@@ -12,13 +12,13 @@ public class Dialogue4a : MonoBehaviour
     public Text Char1speech;
     public Text Char2name;
     public Text Char2speech;
-    public Text Char3name;
-    public Text Char3speech;
+    //public Text Char3name;
+    //public Text Char3speech;
     public GameObject dialogue;
-    public GameObject ArtChar1;
+    public GameObject ArtChar1_RedEyes;
 	public GameObject ArtChar1Normal;
     public GameObject ArtBG1;
-    public GameObject ArtBG2;
+    //public GameObject ArtBG2;
 	public GameObject ArtBGCover;
 	public GameObject ArtBGCover75;
     //public GameObject Choice1a;
@@ -33,11 +33,11 @@ public class Dialogue4a : MonoBehaviour
     void Start()
     {         // initial visibility settings
         dialogue.SetActive(false);
-        ArtChar1.SetActive(false);
+        ArtChar1_RedEyes.SetActive(false);
 		ArtChar1Normal.SetActive(false);
         ArtBG1.SetActive(true);
-        ArtBG2.SetActive(false);
-		ArtBGCover.SetActive(false);
+        //ArtBG2.SetActive(false);
+		ArtBGCover.SetActive(true);
 		ArtBGCover75.SetActive(false);
         //Choice1a.SetActive(false);
         //Choice1b.SetActive(false);
@@ -64,8 +64,8 @@ public class Dialogue4a : MonoBehaviour
       }
 	  
       else if (primeInt == 2){
-              ArtChar1.SetActive(false);
-			  //RedEyes.SetActive(true);
+              //ArtChar1.SetActive(false);
+			  ArtChar1_RedEyes.SetActive(true);
               dialogue.SetActive(true);
               Char1name.text = "";
               Char1speech.text = " You step down the porch to investigate. The cicada screams like the screech of a jet engine. A pair of eyes glow under the eaves of the porch.";
@@ -76,7 +76,7 @@ public class Dialogue4a : MonoBehaviour
      else if (primeInt ==3){
 			ArtBGCover.SetActive(false);
 			ArtBGCover75.SetActive(true);
-			//RedEyes.SetActive(false);
+			ArtChar1_RedEyes.SetActive(false);
 			ArtChar1Normal.SetActive(true);
               Char1name.text = "";
               Char1speech.text = "You are staring right at a person’s face! Attached to the face is the body of a cicada, crawling towards you with its 6 legs";
@@ -86,13 +86,14 @@ public class Dialogue4a : MonoBehaviour
       }
 	  
      else if (primeInt == 4){
-			  ArtChar1.SetActive(true);
+			  //ArtChar1.SetActive(true);
               Char1name.text = "You";
               Char1speech.text = "The fu--";
               Char2name.text = "";
               Char2speech.text = "";
       }
      else if (primeInt == 5){
+			  ArtBGCover.SetActive(false);
               Char1name.text = "";
               Char1speech.text = "";
               Char2name.text = "Cicada Man";
@@ -104,16 +105,16 @@ public class Dialogue4a : MonoBehaviour
               Char1speech.text = "EEEEEK";
               Char2name.text = "";
               Char2speech.text = "";
-			  gameHandler.AddPlayerStanity(-5);
+			  //gameHandler.AddPlayerStanity(-5);
       }
      else if (primeInt ==7){
               Char1name.text = "";
               Char1speech.text = "";
               Char2name.text = "Cicada Man";
               Char2speech.text = "shhHHHhhh...YoU’LL...wAke thE NeiGHbOrs…";
-			  if (gameHandler.WhatIsPlayerSanity() < 10){
-				  primeInt = 39;
-			  }
+			 // if (gameHandler.WhatIsPlayerSanity() < 10){
+			 //  	primeInt = 39;
+			 // }
 			  
       }
 	  
@@ -144,14 +145,14 @@ public class Dialogue4a : MonoBehaviour
               Char2speech.text = "BZZZT...Ssssooo maNY qUEstionS...You’RE a CurIOUS littLE oNE...aren’t YoU?";
 	  }
 	  else if (primeInt == 12){
-			 ArtChar1.SetActive(false);
+			 //ArtChar1.SetActive(false);
 			  Char1name.text = "";
               Char1speech.text = "The bug seems a bit annoyed. You can tell by the way it furrows it’s human-like eyebrows…";
               Char2name.text = "";
               Char2speech.text = "";
 	  }
 	  else if (primeInt == 13){
-			ArtChar1.SetActive(true);
+			//ArtChar1.SetActive(true);
 			  Char1name.text = "You";
               Char1speech.text = "...";
               Char2name.text = "";
@@ -182,7 +183,7 @@ public class Dialogue4a : MonoBehaviour
               NextScene4bButton.SetActive(true);
 			  NextScene4cButton.SetActive(true);
 			  //NextScene3Button.SetActive(true);
-              //Choice4b.SetActive(true); function Choice4bFunct();
+              //Choice4b.SetActive(true); NextScene4bButtonbFunct();
               //Choice4c.SetActive(true); function Choice4cFunct();
 	  }
     }

@@ -84,6 +84,7 @@ public void talking(){         // main story function. Players hit next to progr
               Char1speech.text = "you travelled hundreds of miles from home to claim your inheritance. However, not all is as it seems in the neighborhood.";
               Char2name.text = "";
               Char2speech.text = "";
+			  nextButton.SetActive(false);
               NextScene1Button.SetActive(true);
       }
     }
