@@ -135,7 +135,7 @@ public void talking(){         // main story function. Players hit next to progr
 //               allowSpace = false;
 //               //NextScene2Button.SetActive(true);
 //       }
-//    }
+    }
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
       // public void Choice1aFunct(){
@@ -165,6 +165,6 @@ public void talking(){         // main story function. Players hit next to progr
              SceneManager.LoadScene("WinScreen");
       }
       // public void SceneChange2(){
-             SceneManager.LoadScene("Scene_2b");
-      }
+      //       SceneManager.LoadScene("Scene_2b");
+      //}
 }
