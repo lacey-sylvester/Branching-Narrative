@@ -15,7 +15,7 @@ public class Dialogue6 : MonoBehaviour
       //public Text Char3name;
       //public Text Char3speech;
       public GameObject dialogue;
-      //public GameObject ArtChar1;
+      public GameObject ArtChar1;
       public GameObject ArtBG1;
       //public GameObject Choice1a;
       //public GameObject Choice1b;
@@ -28,7 +28,7 @@ public class Dialogue6 : MonoBehaviour
 
 void Start(){         // initial visibility settings
       dialogue.SetActive(false);
-      //ArtChar1.SetActive(false);
+      ArtChar1.SetActive(false);
       ArtBG1.SetActive(true);
       //Choice1a.SetActive(false);
       //Choice1b.SetActive(false);
@@ -51,27 +51,27 @@ public void talking(){         // main story function. Players hit next to progr
               // AudioSource.Play();
       }
       else if (primeInt == 2){
-             //ArtChar1.SetActive(true);
+             ArtChar1.SetActive(true);
               dialogue.SetActive(true);
               Char1name.text = "Granny";
-              Char1speech.text = "Goodbye. You saved me!! such a good grandkid.";
+              Char1speech.text = "I can finally leave this place....";
               Char2name.text = "";
               Char2speech.text = "";
               NextScene1Button.SetActive(true);
       }
-//      else if (primeInt ==3){
-//               Char1name.text = "";
-//               Char1speech.text = "";
-//               Char2name.text = "You";
-//               Char2speech.text = "Wuh..? What happened?";
-//               //gameHandler.AddPlayerStat(1);
-//       }
-//      else if (primeInt == 4){
-//               Char1name.text = "Jeda";
-//               Char1speech.text = "I know I did not hit you that hard.";
-//               Char2name.text = "";
-//               Char2speech.text = "";
-//       }
+     else if (primeInt ==3){
+              Char1name.text = "Granny";
+              Char1speech.text = "Thank you.";
+              Char2name.text = "";
+              Char2speech.text = "";
+              //gameHandler.AddPlayerStat(1);
+      }
+     else if (primeInt == 4){
+              Char1name.text = "Granny";
+              Char1speech.text = "You were always my favorite grandchild.";
+              Char2name.text = "";
+              Char2speech.text = "";
+      }
 //      else if (primeInt == 5){
 //               Char1name.text = "";
 //               Char1speech.text = "";

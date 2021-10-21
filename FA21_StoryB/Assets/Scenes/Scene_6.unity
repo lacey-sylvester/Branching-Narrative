@@ -254,6 +254,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 094ae7ecf2fd84d3ab08d30804ebc714, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  primeInt: 1
+  Char1name: {fileID: 0}
+  Char1speech: {fileID: 0}
+  Char2name: {fileID: 0}
+  Char2speech: {fileID: 0}
+  dialogue: {fileID: 0}
+  ArtChar1: {fileID: 0}
+  ArtBG1: {fileID: 0}
+  NextScene1Button: {fileID: 0}
+  NextScene2Button: {fileID: 0}
+  nextButton: {fileID: 0}
+  gameHandler: {fileID: 0}
 --- !u!1 &110796318
 GameObject:
   m_ObjectHideFlags: 0
@@ -885,7 +897,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.42001343, y: -0.69000244}
+  m_AnchoredPosition: {x: -10, y: -20}
   m_SizeDelta: {x: -0.8399979, y: -1.3799953}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &650738897
