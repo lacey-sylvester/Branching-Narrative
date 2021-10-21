@@ -489,7 +489,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.735849, g: 0.079832695, b: 0.079832695, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -509,7 +509,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Char 2
+  m_Text: '
 
 '
 --- !u!222 &1023119920
@@ -746,8 +746,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -176.824, y: -225}
-  m_SizeDelta: {x: 900, y: 240}
+  m_AnchoredPosition: {x: -151, y: -223}
+  m_SizeDelta: {x: 950, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1282941651
 MonoBehaviour:
@@ -857,9 +857,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Pull into the driveway of your new home
-
-'
+  m_Text: Pull into the driveway of your new home
 --- !u!222 &1408870608
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -938,7 +936,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Speech?
+  m_Text: '
 
 '
 --- !u!222 &1503316316
@@ -949,6 +947,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1503316313}
   m_CullTransparentMesh: 1
+--- !u!114 &1530135335 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 253367029522990335, guid: f07fe5fdcba5795459ab8ba0a8062b87, type: 3}
+  m_PrefabInstance: {fileID: 1023590051}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a150c7db7cedee04d9a6f6ad7a688220, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1578114808
 GameObject:
   m_ObjectHideFlags: 0
@@ -1070,10 +1079,11 @@ MonoBehaviour:
   Char1speech: {fileID: 1503316315}
   Char2name: {fileID: 1023119919}
   Char2speech: {fileID: 1583769004}
-  dialogue: {fileID: 16639016}
-  ArtBG1: {fileID: 2134604641}
-  NextScene1Button: {fileID: 2084991511}
-  nextButton: {fileID: 1268966783}
+  Dialogue: {fileID: 16639016}
+  ArtBG: {fileID: 2134604641}
+  ButtonSceneChange1: {fileID: 2084991511}
+  ButtonNext: {fileID: 1268966783}
+  gameHandler: {fileID: 1530135335}
 --- !u!1 &1583769002
 GameObject:
   m_ObjectHideFlags: 0
@@ -1109,7 +1119,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -5.151123, y: 2.8920746}
-  m_SizeDelta: {x: 847.601, y: 204.744}
+  m_SizeDelta: {x: 900, y: 204.744}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1583769004
 MonoBehaviour:
@@ -1124,7 +1134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8018868, g: 0.06430225, b: 0.06430225, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1144,9 +1154,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Speech2?
-
-'
+  m_Text: 
 --- !u!222 &1583769005
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1225,7 +1233,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Char 1
+  m_Text: 
 --- !u!222 &1649844653
 CanvasRenderer:
   m_ObjectHideFlags: 0

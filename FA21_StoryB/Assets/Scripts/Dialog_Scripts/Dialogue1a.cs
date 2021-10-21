@@ -89,14 +89,6 @@ public class Dialogue1a : MonoBehaviour
             Char1speech.text = "May you rest in peace, Gran.";
             Char2name.text = "";
             Char2speech.text = "";
-            //gameHandler.AddPlayerStat(1);
-        }
-        else if (primeInt == 6)
-        {
-            Char1name.text = "YOU";
-            Char1speech.text = "May you rest in peace, Gran.";
-            Char2name.text = "";
-            Char2speech.text = "";
             //Turn off "Next" button, turn on "Choice" buttons
             ButtonNext.SetActive(false);
             allowSpace = false;
