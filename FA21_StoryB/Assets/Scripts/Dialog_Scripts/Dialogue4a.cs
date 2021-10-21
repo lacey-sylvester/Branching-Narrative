@@ -12,37 +12,34 @@ public class Dialogue4a : MonoBehaviour
     public Text Char1speech;
     public Text Char2name;
     public Text Char2speech;
-    //public Text Char3name;
-    //public Text Char3speech;
+    public Text Char3name;
+    public Text Char3speech;
     public GameObject dialogue;
-    public GameObject ArtChar1_RedEyes;
-	public GameObject ArtChar1Normal;
-    public GameObject ArtBG1;
-    //public GameObject ArtBG2;
-	public GameObject ArtBGCover;
-	public GameObject ArtBGCover75;
+    //public GameObject ArtChar1;
+    public GameObject CoverBroken;
+    public GameObject Cover;
+	public GameObject UnderPorch;
+	public GameObject Normal_Cicada;
+	public GameObject RedEyes;
     //public GameObject Choice1a;
     //public GameObject Choice1b;
-    public GameObject NextScene4bButton;
-    public GameObject NextScene4cButton;
+    public GameObject NextScene1Button;
+    public GameObject NextScene2Button;
     public GameObject nextButton;
-    public GameHandler gameHandler;
+    public GameHandler GameHandler;
     //public AudioSource audioSource;
     private bool allowSpace = true;
 
     void Start()
     {         // initial visibility settings
         dialogue.SetActive(false);
-        ArtChar1_RedEyes.SetActive(false);
-		ArtChar1Normal.SetActive(false);
-        ArtBG1.SetActive(true);
-        //ArtBG2.SetActive(false);
-		ArtBGCover.SetActive(true);
-		ArtBGCover75.SetActive(false);
+        Normal_Cicada.SetActive(false);
+        Cover.SetActive(true);
+		RedEyes.SetActive(false);
         //Choice1a.SetActive(false);
         //Choice1b.SetActive(false);
-        NextScene4bButton.SetActive(false);
-        NextScene4cButton.SetActive(false);
+        NextScene1Button.SetActive(false);
+        NextScene2Button.SetActive(false);
         nextButton.SetActive(true);
     }
 
@@ -57,136 +54,207 @@ public class Dialogue4a : MonoBehaviour
         }
     }
 
-    public void talking(){         // main story function. Players hit next to progress to next int
-      primeInt = primeInt + 1;
-      if (primeInt == 1){
-              // AudioSource.Play();
-      }
-	  
-      else if (primeInt == 2){
-              //ArtChar1.SetActive(false);
-			  ArtChar1_RedEyes.SetActive(true);
-              dialogue.SetActive(true);
-              Char1name.text = "";
-              Char1speech.text = " You step down the porch to investigate. The cicada screams like the screech of a jet engine. A pair of eyes glow under the eaves of the porch.";
-              Char2name.text = "";
-              Char2speech.text = "";
-      }
-	  
-     else if (primeInt ==3){
-			ArtBGCover.SetActive(false);
-			ArtBGCover75.SetActive(true);
-			ArtChar1_RedEyes.SetActive(false);
-			ArtChar1Normal.SetActive(true);
-              Char1name.text = "";
-              Char1speech.text = "You are staring right at a person’s face! Attached to the face is the body of a cicada, crawling towards you with its 6 legs";
-              Char2name.text = "";
-              Char2speech.text = "";
-              //gameHandler.AddPlayerStat(1);
-      }
-	  
-     else if (primeInt == 4){
-			  //ArtChar1.SetActive(true);
-              Char1name.text = "You";
-              Char1speech.text = "The fu--";
-              Char2name.text = "";
-              Char2speech.text = "";
-      }
-     else if (primeInt == 5){
-			  ArtBGCover.SetActive(false);
-              Char1name.text = "";
-              Char1speech.text = "";
-              Char2name.text = "Cicada Man";
-              Char2speech.text = " hELLo tHeRe LitTle onE…";
-              //gameHandler.AddPlayerStat(1);
-      }
-     else if (primeInt == 6){
-              Char1name.text = "You";
-              Char1speech.text = "EEEEEK";
-              Char2name.text = "";
-              Char2speech.text = "";
-			  //gameHandler.AddPlayerStanity(-5);
-      }
-     else if (primeInt ==7){
-              Char1name.text = "";
-              Char1speech.text = "";
-              Char2name.text = "Cicada Man";
-              Char2speech.text = "shhHHHhhh...YoU’LL...wAke thE NeiGHbOrs…";
-			 // if (gameHandler.WhatIsPlayerSanity() < 10){
-			 //  	primeInt = 39;
-			 // }
-			  
-      }
-	  
-     else if (primeInt == 8){
-			  Char1name.text = "You";
-              Char1speech.text = "What are you?";
-              Char2name.text = "";
-              Char2speech.text = "";
-	  }
-			  
-	 else if (primeInt == 9){
-			  Char1name.text = "";
-              Char1speech.text = "";
-              Char2name.text = "Cicada Man";
-              Char2speech.text = " Issssn’t it ObVioUS…?";
-	  }
-			  
-     else if (primeInt == 10){
-			  Char1name.text = "You";
-              Char1speech.text = "Why are you here?";
-              Char2name.text = "";
-              Char2speech.text = "";
-	  }
-	 else if (primeInt == 11){
-			  Char1name.text = "";
-              Char1speech.text = "";
-              Char2name.text = "Cicada Man";
-              Char2speech.text = "BZZZT...Ssssooo maNY qUEstionS...You’RE a CurIOUS littLE oNE...aren’t YoU?";
-	  }
-	  else if (primeInt == 12){
-			 //ArtChar1.SetActive(false);
-			  Char1name.text = "";
-              Char1speech.text = "The bug seems a bit annoyed. You can tell by the way it furrows it’s human-like eyebrows…";
-              Char2name.text = "";
-              Char2speech.text = "";
-	  }
-	  else if (primeInt == 13){
-			//ArtChar1.SetActive(true);
-			  Char1name.text = "You";
-              Char1speech.text = "...";
-              Char2name.text = "";
-              Char2speech.text = "";
-	  }
-	  
-	  else if (primeInt == 14){
-			  Char1name.text = "";
-              Char1speech.text = "";
-              Char2name.text = "Cicada Man";
-              Char2speech.text = "LeT mE ASk YOu sssoMeThiNg...dO you liKe Riddles?";
-	  }
-	  
-	  else if (primeInt == 15){
-			  Char1name.text = "You ";
-              Char1speech.text = "Riddles?";
-              Char2name.text = "";
-              Char2speech.text = "";
-	  }
-	  
-	  else if (primeInt == 16){
-			  Char1name.text = "";
-              Char1speech.text = "";
-              Char2name.text = "Cicada Man";
-              Char2speech.text = "InsertRiddlePoem here";
-			  nextButton.SetActive(false);
-              allowSpace = false;
-              NextScene4bButton.SetActive(true);
-			  NextScene4cButton.SetActive(true);
-			  //NextScene3Button.SetActive(true);
-              //Choice4b.SetActive(true); NextScene4bButtonbFunct();
-              //Choice4c.SetActive(true); function Choice4cFunct();
-	  }
-    }
+    public void talking()
+    {         // main story function. Players hit next to progress to next int
+        primeInt = primeInt + 1;
+        if (primeInt == 1)
+        {
+            // AudioSource.Play();
+        }
+        else if (primeInt == 2)
+        {
+            //ArtChar1.SetActive(false);
+            dialogue.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = ">You step down the porch to investigate. The cicada screeches like a jet engine.";
+			Char3name.text = "";
+            Char3speech.text = "";
+        }
+        else if (primeInt == 3)
+        {
+			RedEyes.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = ">A pair of eyes glow under the eaves of the porch.";
+			Char3name.text = "";
+            Char3speech.text = "";
+            //gameHandler.AddPlayerStat(1);
+        }
+        else if (primeInt == 4)
+        {
+			RedEyes.SetActive(false);
+			Normal_Cicada.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "You are staring right at a person’s face!";
+			Char3name.text = "";
+            Char3speech.text = "";
+        }
+        else if (primeInt == 5)
+        {
+            Char1name.text = "YOU";
+            Char1speech.text = "Wh-who are you?!";
+            Char2name.text = "";
+            Char2speech.text = "";
+			Char3name.text = "";
+            Char3speech.text = "";
+            //gameHandler.AddPlayerStat(1);
+        }
+        else if (primeInt == 6)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = ">Attached to the face is the body of a cicada, crawling towards you with its 6 legs.";
+			Char3name.text = "";
+            Char3speech.text = "";
+        }
+        else if (primeInt == 7)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+			Char3name.text = "CICADA MAN";
+            Char3speech.text = "hELLo tHeRe LitTle onE…";
+        }
+        else if (primeInt == 8)
+        {
+            Char1name.text = "YOU";
+            Char1speech.text = "EEEEEEEEK!!!";
+            Char2name.text = "";
+            Char2speech.text = "";
+			Char3name.text = "";
+            Char3speech.text = "";
+        }
+        else if (primeInt == 9)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "CICADA MAN";
+            Char3speech.text = "shhHHHhhh...YoU’LL...wAke thE NeiGHbOrs…";
+        }
+        else if (primeInt == 10)
+        {
+            Char1name.text = "YOU";
+            Char1speech.text = "What are you?!";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "";
+            Char3speech.text = "";
+        }
+        else if (primeInt == 11)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "CICADA MAN";
+            Char3speech.text = "Issssn’t it ObVioUS…?";
+		}
+		else if (primeInt == 12)
+		{
+			Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = ">The creature grins at you, bearing human teeth through its thin lips.";
+            Char3name.text = "";
+            Char3speech.text = "";
+		}
+		else if (primeInt == 13)
+		{
+			Char1name.text = "YOU";
+            Char1speech.text = "Wh-why are you here…?";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "";
+            Char3speech.text = "";
+		}
+		else if (primeInt == 14)
+		{
+			Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "CICADA MAN";
+            Char3speech.text = "BZZZT...Ssssooo maNY qUEstionS...You’RE a CurIOUS littLE oNe aREN't yOU?";
+		}
+		else if (primeInt == 15)
+		{
+			Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = ">The bug seems a bit annoyed. You can tell by the way it furrows it’s human-like eyebrows…";
+            Char3name.text = "";
+            Char3speech.text = "";
+		}
+		else if (primeInt == 16)
+		{
+			Char1name.text = "YOU";
+            Char1speech.text = "I...";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "";
+            Char3speech.text = "";
+		}
+		else if (primeInt == 17)
+		{
+			Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "CICADA MAN";
+            Char3speech.text = "LeT mE ASk YOu sssoMeThiNg...dO you liKe Riddles?";
+		}
+		else if (primeInt == 18)
+		{
+			Char1name.text = "YOU";
+            Char1speech.text = "R-riddles?";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "";
+            Char3speech.text = "";
+		}
+		else if (primeInt == 19)
+		{
+			Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "CICADA MAN";
+            Char3speech.text = "i'lL taKe THaT aS a YeSSSsss....";
+		}
+		else if (primeInt == 20)
+		{
+			Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = ">The monster proudly smiles.";
+            Char3name.text = "";
+            Char3speech.text = "";
+		}
+		else if (primeInt == 21)
+		{
+			Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "CICADA MAN";
+            Char3speech.text = "Well… whAt do yoU thiNk CHild?";
+            //Turn off "Next" button, turn on "Choice" buttons
+            nextButton.SetActive(false);
+            allowSpace = false;
+            NextScene1Button.SetActive(true);
+            NextScene2Button.SetActive(true);
+            //Choice1a.SetActive(true); // function Choice1aFunct()
+            //Choice1b.SetActive(true); // function Choice1bFunct()
+        }
         //    // ENCOUNTER AFTER CHOICE #1
         //    else if (primeInt == 100)
         //    {
@@ -248,13 +316,14 @@ public class Dialogue4a : MonoBehaviour
         //    nextButton.SetActive(true);
         //    allowSpace = true;
         //}
-    
-        public void SceneChange4b()
+    }
+        public void SceneChange1()
         {
             SceneManager.LoadScene("Scene_4b");
         }
-        public void SceneChange4c()
+        public void SceneChange2()
         {
             SceneManager.LoadScene("Scene_4c");
         }
-}                                                                          
+    
+}                                                                         
