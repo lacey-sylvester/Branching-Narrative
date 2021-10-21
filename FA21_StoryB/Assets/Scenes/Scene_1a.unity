@@ -259,12 +259,12 @@ MonoBehaviour:
   Char1speech: {fileID: 110796320}
   Char2name: {fileID: 1366807607}
   Char2speech: {fileID: 439730554}
-  dialogue: {fileID: 285413955}
-  ArtBG1: {fileID: 855856472}
-  NextScene1Button: {fileID: 1647288862}
-  NextScene2Button: {fileID: 1405341906}
-  NextScene3Button: {fileID: 314362497}
-  nextButton: {fileID: 1724494876}
+  Dialogue: {fileID: 285413955}
+  ArtBG: {fileID: 855856472}
+  ButtonSceneChange1: {fileID: 1647288862}
+  ButtonSceneChange2: {fileID: 1405341906}
+  ButtonSceneChange3: {fileID: 314362497}
+  ButtonNext: {fileID: 1724494876}
   gameHandler: {fileID: 835868601}
 --- !u!1 &110796318
 GameObject:
@@ -336,10 +336,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'speech = ??
-
-
-'
+  m_Text: 
 --- !u!222 &110796321
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -608,7 +605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8396226, g: 0.07524917, b: 0.07524917, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -628,10 +625,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'speech = ??
-
-
-'
+  m_Text: 
 --- !u!222 &439730555
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1154,7 +1148,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: char 2
+  m_Text: 
 --- !u!222 &884756388
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1312,7 +1306,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Char 1
+  m_Text: 
 --- !u!222 &1366807608
 CanvasRenderer:
   m_ObjectHideFlags: 0
