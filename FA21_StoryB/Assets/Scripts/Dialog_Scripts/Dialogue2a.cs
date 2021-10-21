@@ -19,6 +19,7 @@ public class Dialogue2a : MonoBehaviour
     public GameObject ArtBG1;
     public GameObject ArtBG2;
     public GameObject ArtBG3;
+    public GameObject ArtBG4;
     public GameObject Rich_Normal;
     public GameObject Rich_Grin;
     public GameObject Rich_Disgusted;
@@ -38,6 +39,7 @@ public class Dialogue2a : MonoBehaviour
         ArtBG1.SetActive(true);
         ArtBG2.SetActive(false);
         ArtBG3.SetActive(false);
+        ArtBG4.SetActive(false);
         Rich_Disgusted.SetActive(false);
         Rich_Normal.SetActive(false);
         Rich_Grin.SetActive(false);
@@ -79,6 +81,8 @@ public class Dialogue2a : MonoBehaviour
         }
         else if (primeInt == 3)
         {
+            ArtBG1.SetActive(false);
+            ArtBG2.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "";
@@ -118,7 +122,8 @@ public class Dialogue2a : MonoBehaviour
         else if (primeInt == 7)
         {
             ArtBG1.SetActive(false);
-            ArtBG2.SetActive(true);
+            ArtBG2.SetActive(false);
+            ArtBG3.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "";
@@ -128,8 +133,8 @@ public class Dialogue2a : MonoBehaviour
         }
         else if (primeInt == 8)
         {
-            ArtBG2.SetActive(false);
-            ArtBG3.SetActive(true);
+            ArtBG3.SetActive(false);
+            ArtBG4.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "";
