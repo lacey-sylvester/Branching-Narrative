@@ -251,9 +251,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 58720192}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 8e8b25c9a4394e04b92e70b847212d52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  primeInt: 1
+  Char1name: {fileID: 884756387}
+  Char1speech: {fileID: 110796320}
+  Char2name: {fileID: 1366807607}
+  Char2speech: {fileID: 439730554}
+  dialogue: {fileID: 285413955}
+  ArtBG1: {fileID: 855856472}
+  nextButton: {fileID: 1724494876}
+  gameHandler: {fileID: 835868601}
 --- !u!1 &110796318
 GameObject:
   m_ObjectHideFlags: 0
@@ -348,7 +357,7 @@ GameObject:
   - component: {fileID: 285413958}
   - component: {fileID: 285413957}
   m_Layer: 5
-  m_Name: Dialogue
+  m_Name: dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -431,7 +440,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &314362498
 RectTransform:
   m_ObjectHideFlags: 0
@@ -496,7 +505,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 58720198}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Dialogue1a, Assembly-CSharp
         m_MethodName: SceneChange3
         m_Mode: 1
@@ -596,7 +605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8396226, g: 0.07524917, b: 0.07524917, a: 1}
+  m_Color: {r: 0.8962264, g: 0.8962264, b: 0.8962264, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -986,6 +995,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f07fe5fdcba5795459ab8ba0a8062b87, type: 3}
+--- !u!114 &835868601 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 253367029522990335, guid: f07fe5fdcba5795459ab8ba0a8062b87, type: 3}
+  m_PrefabInstance: {fileID: 835868600}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a150c7db7cedee04d9a6f6ad7a688220, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &855856472
 GameObject:
   m_ObjectHideFlags: 0
@@ -1043,7 +1063,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f439ed7f1d6b76044a7e04a23537b607, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5b364200a64082f45bec3071f278a737, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1316,7 +1336,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1405341907
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1381,7 +1401,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 58720198}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Dialogue1a, Assembly-CSharp
         m_MethodName: SceneChange2
         m_Mode: 1
@@ -1532,7 +1552,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1647288863
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1597,7 +1617,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 58720198}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Dialogue1a, Assembly-CSharp
         m_MethodName: SceneChange1
         m_Mode: 1
@@ -1660,7 +1680,7 @@ GameObject:
   - component: {fileID: 1724494879}
   - component: {fileID: 1724494878}
   m_Layer: 5
-  m_Name: ButtonNext
+  m_Name: nextButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1731,7 +1751,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 58720198}
-        m_TargetAssemblyTypeName: Dialogue1a, Assembly-CSharp
+        m_TargetAssemblyTypeName: Dialogue5, Assembly-CSharp
         m_MethodName: talking
         m_Mode: 1
         m_Arguments:

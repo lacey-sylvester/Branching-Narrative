@@ -386,7 +386,7 @@ public class Dialogue3a : MonoBehaviour
     }
     public void SceneChange1()
     {
-        SceneManager.LoadScene("WinScreen");
+        SceneManager.LoadScene("LoseScreen");
     }
 
 }
