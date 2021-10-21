@@ -258,12 +258,12 @@ MonoBehaviour:
   Char1speech: {fileID: 110796320}
   Char2name: {fileID: 1366807607}
   Char2speech: {fileID: 439730554}
-  dialogue: {fileID: 285413955}
-  ArtBG1: {fileID: 855856472}
-  NextScene1Button: {fileID: 1647288862}
-  NextScene2Button: {fileID: 1405341906}
-  nextButton: {fileID: 1724494876}
-  gameHandler: {fileID: 0}
+  Dialogue: {fileID: 285413955}
+  ArtBG: {fileID: 855856472}
+  ButtonSceneChange1: {fileID: 1647288862}
+  ButtonSceneChange2: {fileID: 1405341906}
+  ButtonNext: {fileID: 1724494876}
+  gameHandler: {fileID: 1859704627}
 --- !u!1 &110796318
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,10 +334,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'speech = ??
-
-
-'
+  m_Text: 
 --- !u!222 &110796321
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -473,7 +470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8396226, g: 0.07524917, b: 0.07524917, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -493,10 +490,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'speech = ??
-
-
-'
+  m_Text: 
 --- !u!222 &439730555
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -575,7 +569,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Reminisce on the porch
+  m_Text: Call out to Gran
 --- !u!222 &525451520
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -686,8 +680,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -484.34576, y: -78.32132}
-  m_SizeDelta: {x: 272.882, y: 79.3574}
+  m_AnchoredPosition: {x: -421, y: -83}
+  m_SizeDelta: {x: 400, y: 79.3574}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &649467092
 MonoBehaviour:
@@ -789,7 +783,7 @@ MonoBehaviour:
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 4
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -797,7 +791,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Enter your new house
+  m_Text: It was probably your imagination. Go to the store and pick up some roach
+    killer and other supplies.
 --- !u!222 &650738898
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -920,7 +915,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f439ed7f1d6b76044a7e04a23537b607, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cd5b83108b461964cb93c4613bd3f19e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -972,8 +967,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 11.156, y: -4.828}
-  m_SizeDelta: {x: 250.57, y: 56.4861}
+  m_AnchoredPosition: {x: -41, y: -4}
+  m_SizeDelta: {x: 300, y: 56.4861}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &884756387
 MonoBehaviour:
@@ -1008,7 +1003,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: char 2
+  m_Text: 
 --- !u!222 &884756388
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1051,8 +1046,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -13.003, y: -16}
-  m_SizeDelta: {x: 202.252, y: 78.83}
+  m_AnchoredPosition: {x: 7, y: -3}
+  m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1366807607
 MonoBehaviour:
@@ -1087,7 +1082,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Char 1
+  m_Text: 
 --- !u!222 &1366807608
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1349,7 +1344,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -267, y: 191.43}
-  m_SizeDelta: {x: 463.8035, y: 97.1477}
+  m_SizeDelta: {x: 500, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1647288864
 MonoBehaviour:
@@ -1655,6 +1650,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1808329958}
   m_CullTransparentMesh: 1
+--- !u!114 &1859704627 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 253367029522990335, guid: f07fe5fdcba5795459ab8ba0a8062b87, type: 3}
+  m_PrefabInstance: {fileID: 835868600}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a150c7db7cedee04d9a6f6ad7a688220, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1909219880
 GameObject:
   m_ObjectHideFlags: 0
