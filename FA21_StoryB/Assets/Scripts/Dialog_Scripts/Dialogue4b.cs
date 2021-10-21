@@ -30,9 +30,10 @@ public class Dialogue4b : MonoBehaviour
 
     void Start()
     {         // initial visibility settings
-        Dialogue.SetActive(false);
-        //ArtChar1.SetActive(false);
+        Dialogue.SetActive(true);
+        ArtChar1.SetActive(true);
         ArtBG.SetActive(true);
+		ArtBG2.SetActive(true);
         //Choice1a.SetActive(false);
         //Choice1b.SetActive(false);
         ButtonSceneChange1.SetActive(false);
@@ -57,7 +58,7 @@ public class Dialogue4b : MonoBehaviour
         primeInt = primeInt + 1;
         if (primeInt == 1)
         {
-            // AudioSource.Play();
+            // AudioSour ce.Play();
         }
         else if (primeInt == 2)
         {
@@ -131,31 +132,23 @@ else if (primeInt == 7)
             Char1speech.text = "";
             Char2name.text = "Cicada Man";
             Char2speech.text = "The name’s Charles, by the way…";
-        }				
+		}				
 		else if (primeInt == 12)
-        {
+        {	ButtonSceneChange1.SetActive(true);
+			ButtonNext.SetActive(false);
+            allowSpace = false;
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Charles";
             Char2speech.text = "Stop by any time and I’ll sing for you again.";
 			 //Turn off "Next" button, turn on "Choice" buttons
-            ButtonNext.SetActive(false);
-            allowSpace = false;
-            ButtonSceneChange1.SetActive(true);
+         }   
             //ButtonSceneChange2.SetActive(true);
 			//ButtonSceneChange3.SetActive(true);
             //Choice1a.SetActive(true); // function Choice1aFunct()
             //Choice1b.SetActive(true); // function Choice1bFunct()
-		}				
-		else if (primeInt == 6)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }				
+						
 			
-           
         }
         //    // ENCOUNTER AFTER CHOICE #1
         //    else if (primeInt == 100)
