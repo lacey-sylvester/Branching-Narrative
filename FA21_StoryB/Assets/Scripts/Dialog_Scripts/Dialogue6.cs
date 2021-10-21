@@ -92,7 +92,7 @@ public class Dialogue6 : MonoBehaviour
             Char2name.text = "";
             Char2speech.text = "";
         //Turn off "Next" button, turn on "Choice" buttons
-        nextButton.SetActive(false);
+            nextButton.SetActive(false);
             allowSpace = false;
             NextScene1Button.SetActive(true);
             //NextScene2Button.SetActive(true);
